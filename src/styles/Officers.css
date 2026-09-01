@@ -1,0 +1,109 @@
+.officers-page {
+    background-color: white;
+}
+
+.officers-header {
+    padding: 100px 60px;
+    background-color: #f5f5f5;
+}
+
+.officers-label {
+    color: #cc0000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.officers-header h1 {
+    margin: 10px 0 20px;
+    font-size: 4rem;
+}
+
+.officers-intro {
+    max-width: 700px;
+
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.officers-section {
+    padding: 90px 60px;
+}
+
+.section-heading {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+}
+
+.section-heading > p {
+    color: #cc0000;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin-top: 8px;
+    font-size: 2.6rem;
+}
+
+.officers-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.officer-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.officer-image {
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ddd;
+    color: #777;
+}
+
+.officer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.officer-info {
+    padding: 22px;
+}
+
+.officer-role {
+    color: #cc0000;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+.officer-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.officer-bio {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}

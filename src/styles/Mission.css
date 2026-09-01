@@ -1,0 +1,31 @@
+.mission {
+    padding: 100px 60px;
+    background-color: #f7f7f7;
+}
+
+.mission-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission-label {
+    color: #cc0000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.mission h2 {
+    font-size: 2.7rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.mission-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+}

@@ -1,0 +1,49 @@
+.what-we-do {
+    padding: 90px 60px;
+    background-color: white;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section-heading p {
+    color: #cc0000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 2.5rem;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.feature-card {
+    flex: 1;
+    max-width: 350px;
+    padding: 30px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    background-color: #fafafa;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.feature-card p {
+    color: #555;
+    line-height: 1.6;
+}

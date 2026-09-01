@@ -1,0 +1,124 @@
+.events-page {
+    background-color: white;
+}
+
+.events-header {
+    padding: 100px 60px;
+    background-color: #f5f5f5;
+}
+
+.events-label {
+    color: #cc0000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.events-header h1 {
+    margin: 10px 0 20px;
+    font-size: 4rem;
+}
+
+.events-intro {
+    max-width: 700px;
+    margin-bottom: 30px;
+
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.calendar-button {
+    display: inline-block;
+
+    padding: 13px 20px;
+
+    background-color: #cc0000;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    border-radius: 5px;
+}
+
+.calendar-button:hover {
+    background-color: #a90000;
+}
+
+.calendar-section,
+.past-events-section {
+    padding: 90px 60px;
+}
+
+.section-heading {
+    max-width: 1100px;
+    margin: 0 auto 35px;
+}
+
+.section-heading p {
+    color: #cc0000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin-top: 8px;
+    font-size: 2.6rem;
+}
+
+.calendar-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.calendar-container iframe {
+    display: block;
+
+    width: 100%;
+    height: 650px;
+
+    border: none;
+}
+
+.past-events-section {
+    background-color: #f8f8f8;
+}
+
+.past-events-text {
+    max-width: 1100px;
+    margin: 0 auto 35px;
+
+    color: #666;
+    line-height: 1.7;
+}
+
+.past-events-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.past-event-placeholder {
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ddd;
+    color: #777;
+
+    border-radius: 8px;
+}

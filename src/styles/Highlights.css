@@ -1,0 +1,121 @@
+.highlights {
+    padding: 90px 60px;
+    background-color: white;
+}
+
+.highlights-heading {
+    max-width: 1200px;
+    margin: 0 auto 35px;
+}
+
+.highlights-heading p {
+    color: #cc0000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.highlights-heading h2 {
+    margin-top: 8px;
+    font-size: 2.6rem;
+}
+
+.highlight-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.highlight-card {
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.highlight-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlight-overlay {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 100px 40px 35px;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+
+    color: white;
+}
+
+.highlight-overlay h3 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.highlight-overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.carousel-button {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #cc0000;
+    color: white;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: #a90000;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.carousel-dot {
+    width: 9px;
+    height: 9px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background-color: #cc0000;
+}

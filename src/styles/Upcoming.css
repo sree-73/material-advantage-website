@@ -1,0 +1,99 @@
+.upcoming {
+    padding: 90px 60px;
+    background-color: white;
+}
+
+.upcoming-heading {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+}
+
+.upcoming-heading p {
+    color: #cc0000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.upcoming-heading h2 {
+    margin-top: 8px;
+    font-size: 2.6rem;
+}
+
+.upcoming-list {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.upcoming-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.date-box {
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f5f5f5;
+    border-left: 4px solid #cc0000;
+}
+
+.date-month {
+    color: #cc0000;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.date-day {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.upcoming-info {
+    flex: 1;
+}
+
+.upcoming-type {
+    color: #777;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.upcoming-info h3 {
+    margin: 5px 0;
+    font-size: 1.25rem;
+}
+
+.upcoming-info p {
+    color: #666;
+}
+
+.view-calendar {
+    display: block;
+    width: fit-content;
+
+    max-width: 1100px;
+    margin: 30px auto 0;
+
+    color: #cc0000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.view-calendar:hover {
+    text-decoration: underline;
+}

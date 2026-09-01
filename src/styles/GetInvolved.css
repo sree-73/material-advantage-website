@@ -1,0 +1,77 @@
+.get-involved-page {
+    background-color: white;
+}
+
+.get-involved-header {
+    padding: 100px 60px;
+    background-color: #f5f5f5;
+}
+
+.get-involved-label {
+    color: #cc0000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.get-involved-header h1 {
+    margin: 10px 0 20px;
+    font-size: 4rem;
+}
+
+.get-involved-intro {
+    max-width: 750px;
+
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.get-involved-section {
+    padding: 90px 60px;
+}
+
+.get-involved-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.get-involved-card {
+    padding: 40px;
+
+    background-color: #f8f8f8;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+
+    color: #222;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.get-involved-card:hover {
+    border-color: #cc0000;
+    transform: translateY(-3px);
+}
+
+.get-involved-card h2 {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.get-involved-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.get-involved-card span {
+    color: #cc0000;
+    font-weight: 700;
+}
