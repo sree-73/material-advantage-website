@@ -1,0 +1,402 @@
+.career-fair-page {
+  background: #ffffff;
+  color: #222222;
+}
+
+/* HERO */
+
+.career-fair-hero {
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+
+  padding: 7rem 8%;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.62),
+      rgba(0, 0, 0, 0.62)
+    ),
+    url("../images/industry.jpeg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.career-fair-hero-content {
+  max-width: 850px;
+  color: white;
+}
+
+.career-fair-eyebrow {
+  margin-bottom: 1rem;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16rem;
+}
+
+.career-fair-hero h1 {
+  margin: 0 0 1.5rem;
+
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.98;
+}
+
+.career-fair-subtitle {
+  max-width: 700px;
+
+  margin-bottom: 2rem;
+
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.career-fair-details {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.8rem;
+
+  margin-bottom: 2rem;
+}
+
+.career-fair-details span {
+  padding: 0.65rem 1rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+
+  backdrop-filter: blur(4px);
+}
+
+.career-fair-primary-button {
+  display: inline-block;
+
+  padding: 0.9rem 1.5rem;
+
+  background: #cc0000;
+  color: white;
+
+  border-radius: 4px;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.career-fair-primary-button:hover {
+  background: #a90000;
+  transform: translateY(-2px);
+}
+
+/* EMPLOYER CALLOUT */
+
+.employer-callout-wrapper {
+  padding: 0 8%;
+  background: white;
+}
+
+.employer-callout {
+  position: relative;
+
+  max-width: 1200px;
+  margin: -3rem auto 0;
+
+  padding: 2.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 3rem;
+
+  background: #ffffff;
+
+  border-left: 6px solid #cc0000;
+  border-radius: 8px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.employer-callout-text {
+  max-width: 700px;
+}
+
+.employer-callout-label {
+  margin: 0 0 0.5rem;
+
+  color: #cc0000;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
+.employer-callout h2 {
+  margin: 0 0 0.6rem;
+
+  font-size: 1.7rem;
+}
+
+.employer-callout-text > p:last-child {
+  margin: 0;
+
+  color: #555555;
+  line-height: 1.6;
+}
+
+.employer-callout-button {
+  flex-shrink: 0;
+
+  padding: 0.85rem 1.3rem;
+
+  color: #cc0000;
+
+  border: 2px solid #cc0000;
+  border-radius: 4px;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.employer-callout-button:hover {
+  background: #cc0000;
+  color: white;
+}
+
+/* GENERAL SECTIONS */
+
+.career-fair-section {
+  padding: 6rem 8%;
+}
+
+.career-fair-section-alt {
+  background: #f6f6f6;
+}
+
+.career-fair-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.career-fair-section-heading {
+  margin-bottom: 2.5rem;
+}
+
+.career-fair-section-heading > p {
+  margin: 0 0 0.5rem;
+
+  color: #cc0000;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
+.career-fair-section-heading h2 {
+  margin: 0;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+/* WHY ATTEND */
+
+.career-fair-highlight-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.5rem;
+}
+
+.career-fair-highlight-card {
+  padding: 2.2rem;
+
+  background: white;
+
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.career-fair-highlight-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.career-fair-highlight-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: 1.35rem;
+}
+
+.career-fair-highlight-card p {
+  margin: 0;
+
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* COMPANIES */
+
+.career-fair-company-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.5rem;
+}
+
+.career-fair-company-card {
+  padding: 2rem;
+
+  background: white;
+
+  border: 1px solid #dedede;
+  border-radius: 8px;
+}
+
+.career-fair-company-card h3 {
+  margin-top: 0;
+}
+
+.career-fair-company-card p {
+  color: #555555;
+  line-height: 1.6;
+}
+
+.career-fair-company-card a {
+  color: #cc0000;
+
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.career-fair-coming-soon {
+  padding: 3rem;
+
+  background: white;
+
+  border: 1px dashed #c8c8c8;
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+.career-fair-coming-soon h3 {
+  margin-top: 0;
+}
+
+.career-fair-coming-soon p {
+  margin-bottom: 0;
+
+  color: #666666;
+}
+
+/* PREP */
+
+.career-fair-prep-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+
+.career-fair-prep-card span {
+  display: block;
+
+  margin-bottom: 1rem;
+
+  color: #cc0000;
+
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.career-fair-prep-card h3 {
+  margin: 0 0 0.75rem;
+}
+
+.career-fair-prep-card p {
+  margin: 0;
+
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* FAQ */
+
+.career-fair-faqs {
+  max-width: 900px;
+}
+
+.career-fair-faqs details {
+  padding: 1.5rem 0;
+
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.career-fair-faqs summary {
+  cursor: pointer;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.career-fair-faqs details p {
+  max-width: 750px;
+
+  margin: 1rem 0 0;
+
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  .career-fair-hero {
+    min-height: 65vh;
+
+    padding: 6rem 6%;
+  }
+
+  .employer-callout-wrapper {
+    padding: 0 6%;
+  }
+
+  .employer-callout {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 1.5rem;
+  }
+
+  .career-fair-section {
+    padding: 4.5rem 6%;
+  }
+
+  .career-fair-highlight-grid,
+  .career-fair-company-grid,
+  .career-fair-prep-grid {
+    grid-template-columns: 1fr;
+  }
+}

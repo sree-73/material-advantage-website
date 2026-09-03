@@ -21,6 +21,7 @@ function Navbar() {
             <ul className="nav-links">
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="/events">Events</NavLink></li>
+                <li><NavLink to="/career-fair">Career Fair</NavLink></li>
                 <li><NavLink to="/conferences">Conferences</NavLink></li>
                 <li><NavLink to="/resources">Resources</NavLink></li>
                 <li><NavLink to="/officers">Officers</NavLink></li>
