@@ -1,343 +1,181 @@
-.company-logistics-page {
-  background: white;
-  color: #222222;
-}
-
-/* HERO */
-
-.company-logistics-hero {
-  padding: 8rem 8% 7rem;
-
-  background: #1e1e1e;
-
-  color: white;
-}
-
-.company-logistics-hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.company-logistics-eyebrow {
-  margin-bottom: 1rem;
-
-  color: #ff6b6b;
-
-  font-size: 0.85rem;
-  font-weight: 800;
-
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-}
-
-.company-logistics-hero h1 {
-  margin: 0 0 1.3rem;
-
-  font-size: clamp(3rem, 7vw, 5.5rem);
-}
-
-.company-logistics-subtitle {
-  max-width: 700px;
-
-  margin-bottom: 2rem;
-
-  color: #dddddd;
-
-  font-size: 1.2rem;
-  line-height: 1.7;
-}
-
-.company-logistics-back {
-  color: white;
-
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.company-logistics-back:hover {
-  text-decoration: underline;
-}
-
-/* SUMMARY */
-
-.company-logistics-summary-wrapper {
-  padding: 0 8%;
-}
-
-.company-logistics-summary {
-  max-width: 1200px;
-
-  margin: -2.5rem auto 0;
-
+.company-info-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
 
-  background: white;
-
+.company-info-grid div {
+  padding: 1.5rem;
+  background: #f6f6f6;
   border-radius: 8px;
-
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
-
-  overflow: hidden;
 }
 
-.company-logistics-summary div {
-  padding: 2rem;
-
-  border-right: 1px solid #e1e1e1;
-}
-
-.company-logistics-summary div:last-child {
-  border-right: none;
-}
-
-.company-logistics-summary span {
+.company-info-grid span {
   display: block;
-
   margin-bottom: 0.5rem;
 
-  color: #777777;
-
+  color: #777;
   font-size: 0.75rem;
   font-weight: 800;
-
   text-transform: uppercase;
   letter-spacing: 0.08rem;
 }
 
-.company-logistics-summary strong {
-  font-size: 1rem;
+.company-address {
+  margin-top: 1.5rem;
+  font-weight: 600;
 }
 
-/* GENERAL */
-
-.company-logistics-section {
-  padding: 6rem 8%;
-}
-
-.company-logistics-alt {
-  background: #f5f5f5;
-}
-
-.company-logistics-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.company-logistics-heading {
-  margin-bottom: 2.5rem;
-}
-
-.company-logistics-heading > p {
-  margin: 0 0 0.5rem;
-
-  color: #cc0000;
-
-  font-size: 0.8rem;
-  font-weight: 800;
-
-  text-transform: uppercase;
-  letter-spacing: 0.12rem;
-}
-
-.company-logistics-heading h2 {
-  margin: 0;
-
-  font-size: clamp(2rem, 4vw, 3rem);
-}
-
-/* LOGISTICS CARDS */
-
-.company-logistics-grid {
+.parking-layout,
+.directions-layout {
   display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
-
-  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
 }
 
-.company-logistics-card {
-  padding: 2.2rem;
+.parking-text {
+  display: grid;
+  gap: 1rem;
+}
 
-  border: 1px solid #e2e2e2;
+.parking-card,
+.parking-note {
+  padding: 1.5rem;
+  background: white;
   border-radius: 8px;
 }
 
-.company-logistics-card h3 {
-  margin: 0 0 1rem;
-
-  font-size: 1.4rem;
+.parking-note {
+  border-left: 4px solid #cc0000;
 }
 
-.company-logistics-card p {
-  margin: 0;
-
-  color: #555555;
-  line-height: 1.7;
+.parking-map-wrapper img,
+.floor-map-wrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
 }
 
-/* PROVIDED */
+.directions-list {
+  padding-left: 1.5rem;
+}
 
-.company-provided-list {
-  max-width: 850px;
+.directions-list li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
 
+.official-links-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-.company-provided-item {
+.official-link-card {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-
-  gap: 1rem;
 
   padding: 1.2rem 1.4rem;
 
   background: white;
 
-  border-radius: 6px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+
+  color: #222;
+  text-decoration: none;
+  font-weight: 700;
 }
 
-.company-provided-item span {
+.official-link-card:hover {
+  border-color: #cc0000;
   color: #cc0000;
-
-  font-size: 1.2rem;
-  font-weight: 800;
 }
 
-.company-provided-item p {
-  margin: 0;
+.hotel-intro {
+  margin-bottom: 2rem;
+  color: #666;
+}
 
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.hotel-card {
+  padding: 2rem;
+
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+}
+
+.hotel-card h3 {
+  margin-top: 0;
+}
+
+.hotel-address {
   font-weight: 600;
 }
 
-/* PREPARATION */
-
-.company-preparation-grid {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 2rem;
+.hotel-card p {
+  line-height: 1.6;
+  color: #555;
 }
 
-.company-preparation-card > span {
-  display: block;
-
-  margin-bottom: 1rem;
-
+.hotel-card a {
   color: #cc0000;
-
-  font-size: 3rem;
-  font-weight: 800;
-}
-
-.company-preparation-card h3 {
-  margin: 0 0 0.8rem;
-}
-
-.company-preparation-card p {
-  margin: 0;
-
-  color: #555555;
-  line-height: 1.7;
-}
-
-/* FAQ */
-
-.company-logistics-faq {
-  max-width: 900px;
-}
-
-.company-logistics-faq details {
-  padding: 1.5rem 0;
-
-  border-bottom: 1px solid #d8d8d8;
-}
-
-.company-logistics-faq summary {
-  cursor: pointer;
-
-  font-size: 1.1rem;
   font-weight: 700;
+  text-decoration: none;
 }
 
-.company-logistics-faq p {
-  margin-top: 1rem;
-
-  color: #555555;
-  line-height: 1.7;
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
-/* CONTACT */
+.contact-card {
+  padding: 1.5rem;
 
-.company-contact-section {
-  padding: 6rem 8%;
+  background: rgba(255, 255, 255, 0.12);
 
-  background: #cc0000;
-
-  color: white;
+  border-radius: 8px;
 }
 
-.company-contact-content {
-  max-width: 1200px;
-  margin: 0 auto;
+.contact-card span,
+.contact-card strong,
+.contact-card a {
+  display: block;
 }
 
-.company-contact-content > p:first-child {
+.contact-card span {
+  margin-bottom: 0.5rem;
+
+  font-size: 0.75rem;
   font-weight: 700;
 
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08rem;
 }
 
-.company-contact-content h2 {
-  margin: 0.5rem 0 1rem;
-
-  font-size: clamp(2.5rem, 5vw, 4rem);
+.contact-card strong {
+  margin-bottom: 0.4rem;
 }
 
-.company-contact-content p {
-  max-width: 700px;
-
-  line-height: 1.7;
+.contact-card a {
+  color: white;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 850px) {
-
-  .company-logistics-hero {
-    padding: 6rem 6%;
-  }
-
-  .company-logistics-summary-wrapper {
-    padding: 0 6%;
-  }
-
-  .company-logistics-summary {
+  .company-info-grid,
+  .parking-layout,
+  .directions-layout,
+  .official-links-grid,
+  .hotel-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
-  }
-
-  .company-logistics-summary div {
-    border-right: none;
-    border-bottom: 1px solid #e1e1e1;
-  }
-
-  .company-logistics-summary div:last-child {
-    border-bottom: none;
-  }
-
-  .company-logistics-section {
-    padding: 4.5rem 6%;
-  }
-
-  .company-logistics-grid,
-  .company-preparation-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .company-contact-section {
-    padding: 4.5rem 6%;
   }
 }

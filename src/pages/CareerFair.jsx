@@ -33,6 +33,8 @@ function CareerFair() {
             <span>{careerFairInfo.location}</span>
           </div>
 
+          <p className="career-fair-address">{careerFairInfo.address} </p>
+
           <a
             href={careerFairInfo.registrationLink}
             className="career-fair-primary-button"

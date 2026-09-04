@@ -1,10 +1,13 @@
 export const careerFairInfo = {
-  title: "Material Advantage Career Fair",
+  title: "Material Advantage + AIChE Fall Career Fair",
   subtitle:
-    "Connect with employers, explore opportunities, and discover where a career in materials can take you.",
-  date: "Date Coming Soon",
-  time: "Time Coming Soon",
-  location: "NC State University",
+    "Connect with employers, explore career opportunities, and learn more about careers across materials science, chemical engineering, manufacturing, research, and related industries.",
+
+  date: "September 16, 2026",
+  time: "6:00 – 8:00 PM",
+  location: "Duke Energy Hall, James B. Hunt Jr. Library",
+  address: "1070 Partners Way, Raleigh, NC 27606",
+
   registrationLink: "#",
 };
 
@@ -12,27 +15,26 @@ export const careerFairHighlights = [
   {
     title: "Meet Employers",
     description:
-      "Connect directly with companies looking for students interested in materials science, engineering, manufacturing, research, technology, and related fields.",
+      "Connect directly with companies recruiting students from materials science, chemical engineering, engineering, manufacturing, research, and related disciplines.",
   },
   {
     title: "Explore Opportunities",
     description:
-      "Discover internships, co-ops, full-time positions, research opportunities, and career paths across the materials industry.",
+      "Learn about internships, co-ops, full-time positions, and other professional opportunities available to NC State students.",
   },
   {
     title: "Build Your Network",
     description:
-      "Meet recruiters, engineers, researchers, and industry professionals while building connections beyond the classroom.",
+      "Meet recruiters and industry professionals while making connections beyond the classroom.",
   },
 ];
 
 export const participatingCompanies = [
-  // Add companies once they are confirmed.
-  // Example:
+  // Add confirmed companies here as they are finalized.
   //
   // {
   //   name: "Company Name",
-  //   description: "Short description of the company.",
+  //   description: "Short company description.",
   //   website: "https://company.com",
   // },
 ];
@@ -42,41 +44,41 @@ export const preparationSteps = [
     number: "01",
     title: "Update Your Resume",
     description:
-      "Make sure your resume clearly highlights your experience, projects, coursework, leadership, and technical skills.",
+      "Bring an updated resume that highlights your experience, coursework, projects, leadership, and technical skills.",
   },
   {
     number: "02",
     title: "Research Employers",
     description:
-      "Look through the participating companies ahead of time and identify the organizations and opportunities that interest you most.",
+      "Review participating companies before the fair and identify the employers and opportunities you are most interested in.",
   },
   {
     number: "03",
     title: "Prepare Your Introduction",
     description:
-      "Be ready with a short introduction explaining who you are, what you study, and what types of opportunities you are looking for.",
+      "Be ready to briefly introduce yourself, explain what you study, and discuss the opportunities that interest you.",
   },
 ];
 
 export const careerFairFaqs = [
   {
-    question: "Who can attend the career fair?",
+    question: "When is the career fair?",
     answer:
-      "The career fair is intended for NC State students interested in materials science, engineering, manufacturing, technology, research, and related fields.",
+      "The Material Advantage + AIChE Fall Career Fair will take place Wednesday, September 16, 2026 from 6:00 to 8:00 PM.",
+  },
+  {
+    question: "Where is the career fair?",
+    answer:
+      "The career fair will be held in Duke Energy Hall inside James B. Hunt Jr. Library at 1070 Partners Way, Raleigh, NC 27606.",
+  },
+  {
+    question: "Who can attend?",
+    answer:
+      "The career fair is designed for NC State students interested in materials science, chemical engineering, engineering, manufacturing, research, and related fields.",
   },
   {
     question: "What should I bring?",
     answer:
-      "We recommend bringing several copies of your resume and being prepared to introduce yourself to employers.",
-  },
-  {
-    question: "Is registration required?",
-    answer:
-      "Registration details will be posted here once they become available.",
-  },
-  {
-    question: "What should I wear?",
-    answer:
-      "Business casual attire is recommended unless otherwise announced.",
+      "We recommend bringing several copies of your resume and preparing a short introduction before speaking with employers.",
   },
 ];
