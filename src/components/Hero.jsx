@@ -1,5 +1,6 @@
 import "../styles/Hero.css";
 import heroImage from "../images/hero.jpeg";
+import { Link } from "react-router-dom";
 
 function Hero() {
     return (
@@ -15,9 +16,12 @@ function Hero() {
                         NC State University
                     </p>
 
-                    <button className="primary-button">
+                    <Link
+                        to="/get-involved"
+                        className="primary-button"
+                        >
                         Become a Member
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

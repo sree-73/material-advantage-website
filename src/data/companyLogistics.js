@@ -40,23 +40,23 @@ export const directionsToHall = [
 export const officialLinks = [
   {
     label: "Driving Directions to Hunt Library",
-    url: "#",
+    url: "https://www.lib.ncsu.edu/directions/hunt",
   },
   {
     label: "Hunt Library Visitor Parking Information",
-    url: "#",
+    url: "https://www.lib.ncsu.edu/hunt/visit",
   },
   {
     label: "Duke Energy Hall Location & Interior Directions",
-    url: "#",
+    url: "https://www.lib.ncsu.edu/spaces/duke-energy-hall",
   },
   {
     label: "NC State Visitor Parking Information",
-    url: "#",
+    url: "https://transportation.ncsu.edu/visitor-parking/",
   },
   {
     label: "Hunt Library Floor Map",
-    url: "#",
+    url: "https://www.lib.ncsu.edu/hunt/map",
   },
 ];
 
@@ -66,21 +66,21 @@ export const hotels = [
     address: "2451 Alumni Drive, Raleigh, NC 27606",
     description:
       "Located on Centennial Campus and convenient for visitors attending an NC State event.",
-    link: "#",
+    link: "https://www.marriott.com/en-us/hotels/rduas-the-stateview-hotel-autograph-collection/overview/",
   },
   {
     name: "Holiday Inn Express & Suites Raleigh SW - NC State",
     address: "3741 Thistledown Drive, Raleigh, NC 27606",
     description:
       "A practical nearby option with easy access to I-40.",
-    link: "#",
+    link: "https://www.ihg.com/holidayinnexpress/hotels/us/en/raleigh/rdugs/hoteldetail",
   },
   {
     name: "Aloft Raleigh",
     address: "2100 Hillsborough Street, Raleigh, NC 27607",
     description:
       "Located across from NC State's main campus with convenient access to Hillsborough Street and central Raleigh.",
-    link: "#",
+    link: "https://www.marriott.com/en-us/hotels/rdura-aloft-raleigh/overview/",
   },
 ];
 
@@ -88,6 +88,7 @@ export const contacts = [
   {
     role: "Pre-Event Contact",
     name: "Krys Woodruff",
+    phone: "929-308-8484",
     email: "TBD",
   },
   {

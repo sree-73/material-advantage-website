@@ -63,9 +63,11 @@ function Conferences() {
                 <div className="conference-grid">
                     {conferences.map((conference) => (
                         <div className="conference-card" key={conference.id}>
-                            <div className="conference-photo">
-                                Conference Photo
-                            </div>
+                            <img
+                                className="conference-photo"
+                                src={conference.image}
+                                alt={conference.name}
+                            />
 
                             <div className="conference-card-content">
                                 <h3>{conference.name}</h3>
@@ -98,19 +100,6 @@ function Conferences() {
                 </p>
             </section>
 
-            <section className="conference-gallery">
-                <div className="section-heading">
-                    <p>Memories</p>
-                    <h2>Conference Gallery</h2>
-                </div>
-
-                <div className="gallery-grid">
-                    <div>Photo</div>
-                    <div>Photo</div>
-                    <div>Photo</div>
-                    <div>Photo</div>
-                </div>
-            </section>
 
         </main>
     );

@@ -17,6 +17,14 @@ const events = [
     },
     {
         id: 3,
+        title: "Material Advantage + AIChE Career Fair",
+        date: "2026-09-16",
+        type: "Event",
+        time: "6:00 PM",
+        location: "Duke Energy Hall"
+    },
+    {
+        id: 4,
         title: "MS&T 2026",
         date: "2026-10-04",
         type: "Conference",

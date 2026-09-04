@@ -51,7 +51,18 @@
     color: white;
     border: none;
     border-radius: 5px;
+    text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+}
+
+.primary-button:hover {
+  background: #b30000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(204, 0, 0, 0.35);
+}
+
+.primary-button:active {
+  transform: translateY(0);
 }

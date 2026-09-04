@@ -25,7 +25,6 @@ function Navbar() {
                 <li><NavLink to="/conferences">Conferences</NavLink></li>
                 <li><NavLink to="/resources">Resources</NavLink></li>
                 <li><NavLink to="/officers">Officers</NavLink></li>
-                <li><NavLink to="/newsletter">Newsletter</NavLink></li>
                 <li>
                     <NavLink
                         to="/get-involved"

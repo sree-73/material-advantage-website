@@ -9,7 +9,7 @@ const getInvolvedLinks = [
         id: 2,
         title: "Join GroupMe",
         description: "Stay updated and connect with other members.",
-        link: "YOUR_GROUPME_LINK"
+        link: "https://web.groupme.com/join_group/99354459/POsOt5Ra?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnEfrQWew1VFAneBXgnoNZ9wo_GvqdZGA-ENVG6dK5oOb_0mfbyEEeUWQKzNg_aem_f1JfUXwm0IZMfJiFfT9E_g"
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const getInvolvedLinks = [
         id: 4,
         title: "LinkedIn",
         description: "Connect with our chapter and professional community.",
-        link: "YOUR_LINKEDIN_LINK"
+        link: "https://www.linkedin.com/company/ncsu-mat-adv/posts/?feedView=all"
     }
 ];
 

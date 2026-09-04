@@ -1,5 +1,5 @@
 export const careerFairInfo = {
-  title: "Material Advantage + AIChE Fall Career Fair",
+  title: "Material Advantage + AIChE Career Fair",
   subtitle:
     "Connect with employers, explore career opportunities, and learn more about careers across materials science, chemical engineering, manufacturing, research, and related industries.",
 

@@ -110,15 +110,40 @@
     gap: 20px;
 }
 
-.past-event-placeholder {
-    height: 250px;
+.past-event-card {
+    overflow: hidden;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: white;
+    border-radius: 10px;
 
-    background-color: #ddd;
-    color: #777;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 
-    border-radius: 8px;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.past-event-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.past-event-card img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+    display: block;
+}
+
+.past-event-title {
+    margin: 0;
+
+    padding: 1rem 1.25rem;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    text-align: center;
 }

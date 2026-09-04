@@ -1,4 +1,7 @@
 import "../styles/Events.css";
+import pickleball from "../images/events/pickleball.jpg";
+import potluck from "../images/events/potluck.png";
+import qorvo from "../images/events/qorvo.png";
 
 function Events() {
     return (
@@ -32,7 +35,7 @@ function Events() {
 
                 <div className="calendar-container">
                     <iframe
-                        src="https://calendar.google.com/calendar/embed?src=c_97c3a1bcd5f612f60b8bafa5c9ad310dedb3da5fe3e6214b17eb86040e48c8d8%40group.calendar.google.com&ctz=America%2FNew_York"
+                        src="https://calendar.google.com/calendar/u/0/embed?src=c_6423046b6299a83923236ab452e7393407bc66978a357ffed08d08b3dee2221d@group.calendar.google.com&ctz=America/New_York"
                         title="Material Advantage Google Calendar"
                         frameBorder="0"
                         scrolling="no"
@@ -52,16 +55,26 @@ function Events() {
                 </p>
 
                 <div className="past-events-grid">
-                    <div className="past-event-placeholder">
-                        Event Photo
+                    <div className="past-event-card">
+                        <img src={potluck} alt="MS&T 2025" />
+
+                        <h3 className="past-event-title">
+                            Periodic Potluck
+                        </h3>
                     </div>
 
-                    <div className="past-event-placeholder">
-                        Event Photo
+                    <div className="past-event-card">
+                        <img src={qorvo} alt="MS&T 2025" />
+                        <h3 className="past-event-title">
+                            Qorvo Company Dinner
+                        </h3>
                     </div>
 
-                    <div className="past-event-placeholder">
-                        Event Photo
+                    <div className="past-event-card">
+                        <img src={pickleball} alt="MS&T 2025" />
+                        <h3 className="past-event-title">
+                            Pickleball Social
+                        </h3>
                     </div>
                 </div>
             </section>

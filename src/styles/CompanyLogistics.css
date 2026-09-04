@@ -1,74 +1,325 @@
+/* =========================================================
+   COMPANY LOGISTICS PAGE
+   ========================================================= */
+
+.company-logistics-page {
+  width: 100%;
+  background: #ffffff;
+  color: #222222;
+}
+
+.company-logistics-container {
+  width: min(1180px, 88%);
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.company-logistics-hero {
+  background: #1f1f1f;
+  color: white;
+  padding: 6.5rem 0 5.5rem;
+}
+
+.company-logistics-eyebrow {
+  margin: 0 0 0.9rem;
+
+  color: #ef4444;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.14rem;
+}
+
+.company-logistics-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.company-logistics-subtitle {
+  max-width: 720px;
+
+  margin: 1.25rem 0 2rem;
+
+  color: #d1d1d1;
+
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.company-logistics-back {
+  display: inline-flex;
+  align-items: center;
+
+  color: white;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.company-logistics-back:hover {
+  opacity: 0.7;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.company-logistics-section {
+  padding: 5.5rem 0;
+}
+
+.company-logistics-alt {
+  background: #f5f5f5;
+}
+
+.company-logistics-heading {
+  margin-bottom: 2.75rem;
+}
+
+.company-logistics-heading > p {
+  margin: 0 0 0.45rem;
+
+  color: #cc0000;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.13rem;
+}
+
+.company-logistics-heading h2 {
+  margin: 0;
+
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   EVENT INFORMATION
+   ========================================================= */
+
 .company-info-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
   gap: 1rem;
 }
 
 .company-info-grid div {
-  padding: 1.5rem;
-  background: #f6f6f6;
-  border-radius: 8px;
+  min-height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1.6rem;
+
+  background: #f5f5f5;
+
+  border-radius: 10px;
 }
 
 .company-info-grid span {
   display: block;
-  margin-bottom: 0.5rem;
 
-  color: #777;
-  font-size: 0.75rem;
+  margin-bottom: 0.6rem;
+
+  color: #707070;
+
+  font-size: 0.72rem;
   font-weight: 800;
+
   text-transform: uppercase;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.1rem;
+}
+
+.company-info-grid strong {
+  font-size: 1rem;
+  line-height: 1.45;
 }
 
 .company-address {
-  margin-top: 1.5rem;
+  margin: 1.6rem 0 0;
+
+  color: #555555;
+
+  font-size: 1rem;
   font-weight: 600;
 }
 
-.parking-layout,
-.directions-layout {
+
+/* =========================================================
+   PARKING
+   ========================================================= */
+
+.parking-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+
+  gap: 4rem;
+
+  align-items: center;
 }
 
 .parking-text {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.25rem;
 }
 
-.parking-card,
-.parking-note {
-  padding: 1.5rem;
+.parking-card {
+  padding: 1.6rem;
+
   background: white;
-  border-radius: 8px;
+
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+}
+
+.parking-card h3 {
+  margin: 0 0 0.65rem;
+
+  font-size: 1.25rem;
+}
+
+.parking-card p {
+  margin: 0;
+
+  color: #555555;
+
+  line-height: 1.65;
 }
 
 .parking-note {
-  border-left: 4px solid #cc0000;
+  padding: 1.5rem 1.6rem;
+
+  background: #ffffff;
+
+  border-left: 5px solid #cc0000;
+  border-radius: 0 8px 8px 0;
 }
 
-.parking-map-wrapper img,
-.floor-map-wrapper img {
-  width: 100%;
+.parking-note strong {
   display: block;
-  border-radius: 8px;
+
+  margin-bottom: 0.45rem;
+}
+
+.parking-note p {
+  margin: 0;
+
+  color: #555555;
+
+  line-height: 1.65;
+}
+
+
+/* THE MAP — this is what fixes the giant image */
+
+.parking-map-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.parking-map-wrapper img {
+  display: block;
+
+  width: 100%;
+  max-width: 540px;
+  max-height: 560px;
+
+  object-fit: contain;
+
+  background: white;
+
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   DIRECTIONS / FLOOR MAP
+   ========================================================= */
+
+.directions-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+
+  gap: 4rem;
+
+  align-items: center;
 }
 
 .directions-list {
+  margin: 0;
   padding-left: 1.5rem;
 }
 
 .directions-list li {
+  padding-left: 0.5rem;
   margin-bottom: 1rem;
-  line-height: 1.6;
+
+  color: #444444;
+
+  line-height: 1.65;
 }
+
+.directions-list li::marker {
+  color: #cc0000;
+
+  font-weight: 800;
+}
+
+.floor-map-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.floor-map-wrapper img {
+  display: block;
+
+  width: 100%;
+  max-width: 650px;
+  max-height: 500px;
+
+  object-fit: contain;
+
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================================
+   OFFICIAL LINKS
+   ========================================================= */
 
 .official-links-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   gap: 1rem;
 }
 
@@ -77,64 +328,224 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 1.2rem 1.4rem;
+  gap: 1rem;
+
+  padding: 1.35rem 1.5rem;
 
   background: white;
 
-  border: 1px solid #dddddd;
-  border-radius: 8px;
+  border: 1px solid #dedede;
+  border-radius: 9px;
 
-  color: #222;
-  text-decoration: none;
+  color: #222222;
+
   font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.official-link-card span {
+  color: #cc0000;
+
+  font-size: 1.25rem;
 }
 
 .official-link-card:hover {
-  border-color: #cc0000;
   color: #cc0000;
+
+  border-color: #cc0000;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
+
+/* =========================================================
+   HOTELS
+   ========================================================= */
+
 .hotel-intro {
-  margin-bottom: 2rem;
-  color: #666;
+  max-width: 700px;
+
+  margin: -1rem 0 2.25rem;
+
+  color: #666666;
+
+  line-height: 1.65;
 }
 
 .hotel-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   gap: 1.5rem;
 }
 
 .hotel-card {
+  display: flex;
+  flex-direction: column;
+
   padding: 2rem;
 
   border: 1px solid #dddddd;
-  border-radius: 8px;
+  border-radius: 10px;
+
+  background: white;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
 }
 
 .hotel-card h3 {
-  margin-top: 0;
+  margin: 0 0 1rem;
+
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
 .hotel-address {
-  font-weight: 600;
+  margin: 0 0 1rem;
+
+  color: #333333 !important;
+
+  font-weight: 700;
 }
 
 .hotel-card p {
-  line-height: 1.6;
-  color: #555;
+  margin: 0 0 1rem;
+
+  color: #5b5b5b;
+
+  line-height: 1.65;
 }
 
 .hotel-card a {
+  margin-top: auto;
+  padding-top: 0.5rem;
+
   color: #cc0000;
+
   font-weight: 700;
+
   text-decoration: none;
+}
+
+.hotel-card a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.company-logistics-faq {
+  max-width: 900px;
+}
+
+.company-logistics-faq details {
+  padding: 1.4rem 0;
+
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.company-logistics-faq details:first-child {
+  border-top: 1px solid #d3d3d3;
+}
+
+.company-logistics-faq summary {
+  cursor: pointer;
+
+  list-style: none;
+
+  position: relative;
+
+  padding-right: 2rem;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.company-logistics-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.company-logistics-faq summary::after {
+  content: "+";
+
+  position: absolute;
+  right: 0;
+  top: -0.15rem;
+
+  color: #cc0000;
+
+  font-size: 1.5rem;
+}
+
+.company-logistics-faq details[open] summary::after {
+  content: "−";
+}
+
+.company-logistics-faq details p {
+  max-width: 760px;
+
+  margin: 1rem 0 0;
+
+  color: #555555;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.company-contact-section {
+  padding: 5.5rem 0;
+
+  background: #cc0000;
+
+  color: white;
+}
+
+.company-contact-label {
+  margin: 0 0 0.5rem;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+}
+
+.company-contact-section h2 {
+  margin: 0 0 2rem;
+
+  font-size: clamp(2.4rem, 5vw, 4rem);
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+
+  gap: 1.25rem;
+
+  max-width: 800px;
 }
 
 .contact-card {
@@ -142,7 +553,8 @@
 
   background: rgba(255, 255, 255, 0.12);
 
-  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
 }
 
 .contact-card span,
@@ -152,10 +564,12 @@
 }
 
 .contact-card span {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 
-  font-size: 0.75rem;
-  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 0.72rem;
+  font-weight: 800;
 
   text-transform: uppercase;
   letter-spacing: 0.08rem;
@@ -163,19 +577,88 @@
 
 .contact-card strong {
   margin-bottom: 0.4rem;
+
+  font-size: 1.1rem;
 }
 
 .contact-card a {
   color: white;
+
+  text-decoration: none;
 }
 
-@media (max-width: 850px) {
-  .company-info-grid,
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .company-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .parking-layout,
-  .directions-layout,
-  .official-links-grid,
-  .hotel-grid,
+  .directions-layout {
+    grid-template-columns: 1fr;
+
+    gap: 2.5rem;
+  }
+
+  .parking-map-wrapper img {
+    max-width: 600px;
+  }
+
+  .hotel-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .company-logistics-container {
+    width: min(90%, 1180px);
+  }
+
+  .company-logistics-hero {
+    padding: 4.5rem 0;
+  }
+
+  .company-logistics-section {
+    padding: 4rem 0;
+  }
+
+  .company-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .company-info-grid div {
+    min-height: auto;
+  }
+
+  .official-links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hotel-grid {
+    grid-template-columns: 1fr;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .parking-map-wrapper img,
+  .floor-map-wrapper img {
+    max-height: none;
   }
 }

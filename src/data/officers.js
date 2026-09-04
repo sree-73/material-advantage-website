@@ -1,3 +1,12 @@
+import chair25 from "../images/officers/chair25.png";
+import vc25 from "../images/officers/vc25.png";
+import professional25 from "../images/officers/professional25.png";
+import social25 from "../images/officers/social25.png";
+import conference25 from "../images/officers/conference25.png";
+import finance25 from "../images/officers/finance25.png";
+import admin25 from "../images/officers/admin25.png";
+
+
 const officerGroups = [
     {
         year: "2026–2027",
@@ -69,35 +78,35 @@ const officerGroups = [
                 name: "Cordelia McKelvy",
                 role: "Chair",
                 bio: "",
-                image: null
+                image: chair25
             },
             {
                 id: 2,
                 name: "Tamia Burgess",
                 role: "Vice Chair",
                 bio: "",
-                image: null
+                image: vc25
             },
             {
                 id: 3,
                 name: "Krys Woodruff",
                 role: "Professional Events Chair",
                 bio: "",
-                image: null
+                image: professional25
             },
             {
                 id: 4,
                 name: "Mackenzie Chorzelewski",
                 role: "Social Events Chair",
                 bio: "",
-                image: null
+                image: social25
             },
             {
                 id: 5,
                 name: "Sree Damuluri",
                 role: "Conference Chair",
                 bio: "",
-                image: null
+                image: conference25
             },
             {
                 id: 6,
@@ -111,14 +120,14 @@ const officerGroups = [
                 name: "Alex Gilbert",
                 role: "Finance Chair",
                 bio: "",
-                image: null
+                image: finance25
             },
             {
                 id: 8,
                 name: "Ariel Nguyen",
                 role: "Administrative Chair",
                 bio: "",
-                image: null
+                image: admin25
             }
         ]
     }

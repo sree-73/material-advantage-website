@@ -41,8 +41,8 @@
 .career-fair-hero h1 {
   margin: 0 0 1.5rem;
 
-  font-size: clamp(3rem, 7vw, 6rem);
-  line-height: 0.98;
+  font-size: clamp(2.6rem, 5vw, 4.8rem);
+  line-height: 1.05;
 }
 
 .career-fair-subtitle {
@@ -72,6 +72,14 @@
   backdrop-filter: blur(4px);
 }
 
+.career-fair-address {
+  margin: -1rem 0 2rem;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 0.95rem;
+}
+
 .career-fair-primary-button {
   display: inline-block;
 
@@ -98,42 +106,42 @@
 /* EMPLOYER CALLOUT */
 
 .employer-callout-wrapper {
-  padding: 0 8%;
-  background: white;
+  padding: 2.5rem 8%;
+
+  background: #f6f6f6;
 }
 
 .employer-callout {
-  position: relative;
-
   max-width: 1200px;
-  margin: -3rem auto 0;
+  margin: 0 auto;
 
-  padding: 2.5rem;
+  padding: 2rem 2.4rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  gap: 3rem;
+  gap: 2rem;
 
   background: #ffffff;
 
-  border-left: 6px solid #cc0000;
-  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  border-left: 5px solid #cc0000;
+  border-radius: 10px;
 
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
 
 .employer-callout-text {
-  max-width: 700px;
+  max-width: 720px;
 }
 
 .employer-callout-label {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.45rem;
 
   color: #cc0000;
 
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 800;
 
   text-transform: uppercase;
@@ -141,9 +149,9 @@
 }
 
 .employer-callout h2 {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.5rem;
 
-  font-size: 1.7rem;
+  font-size: 1.55rem;
 }
 
 .employer-callout-text > p:last-child {
@@ -156,22 +164,28 @@
 .employer-callout-button {
   flex-shrink: 0;
 
-  padding: 0.85rem 1.3rem;
+  padding: 0.9rem 1.35rem;
 
+  background: #ffffff;
   color: #cc0000;
 
   border: 2px solid #cc0000;
-  border-radius: 4px;
+  border-radius: 6px;
 
   text-decoration: none;
   font-weight: 700;
 
-  transition: 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .employer-callout-button:hover {
   background: #cc0000;
   color: white;
+
+  transform: translateY(-2px);
 }
 
 /* GENERAL SECTIONS */
@@ -369,16 +383,9 @@
   line-height: 1.7;
 }
 
-.career-fair-address {
-  margin: -1rem 0 2rem;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.95rem;
-}
-
 /* RESPONSIVE */
 
 @media (max-width: 850px) {
-
   .career-fair-hero {
     min-height: 65vh;
 
@@ -386,7 +393,7 @@
   }
 
   .employer-callout-wrapper {
-    padding: 0 6%;
+    padding: 2rem 6%;
   }
 
   .employer-callout {
@@ -394,6 +401,8 @@
     align-items: flex-start;
 
     gap: 1.5rem;
+
+    padding: 1.8rem;
   }
 
   .career-fair-section {

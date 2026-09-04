@@ -56,8 +56,7 @@ function CareerFair() {
             <h2>Participating in the Career Fair?</h2>
 
             <p>
-              Find parking information, arrival instructions,
-              check-in details, setup times, and other day-of
+              Find parking information, arrival instructions, and other day-of
               logistics for company representatives.
             </p>
           </div>
