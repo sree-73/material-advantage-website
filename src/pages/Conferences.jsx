@@ -92,11 +92,11 @@ function Conferences() {
                 </div>
 
                 <blockquote>
-                    “YAY Conference is great guys!”
+                    “Attending conferences through Material Advantage has strengthened my networking skills and opened doors to so many new opportunities! I love meeting students and professionals from across the country who share my enthusiasm for Materials Science! It’s been rewarding building lasting connections that extend beyond each conference, giving me a community of people I can continue to learn from and stay connected.”
                 </blockquote>
 
                 <p className="quote-author">
-                    — Material Advantage Member
+                    — Ariel, Material Advantage Member
                 </p>
             </section>
 

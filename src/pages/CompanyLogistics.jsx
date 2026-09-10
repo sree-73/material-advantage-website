@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 
 import {
   companyLogisticsInfo,
+  eventSchedule,
   parkingInfo,
   directionsToHall,
   officialLinks,
+  boothAssignments,
   hotels,
   contacts,
   companyFaqs,
@@ -75,8 +77,50 @@ function CompanyLogistics() {
         </div>
       </section>
 
-      {/* PARKING */}
+      {/* EVENT SCHEDULE */}
       <section className="company-logistics-section company-logistics-alt">
+        <div className="company-logistics-container">
+
+          <div className="company-logistics-heading">
+            <p>Event Timeline</p>
+            <h2>Event Schedule</h2>
+          </div>
+
+          <div className="event-schedule">
+
+            {eventSchedule.map((item) => (
+              <div
+                className="event-schedule-row"
+                key={`${item.time}-${item.activity}`}
+              >
+                <div className="event-schedule-time">
+                  {item.time}
+                </div>
+
+                <div className="event-schedule-activity">
+                  <h3>{item.activity}</h3>
+                </div>
+
+                <div className="event-schedule-details">
+                  <p>{item.details}</p>
+                </div>
+              </div>
+            ))}
+
+          </div>
+
+          <p className="event-schedule-note">
+            Please plan to arrive at <strong>5:00 PM</strong> to check in,
+            locate your booth, and set up before students arrive. Material
+            Advantage officers will be available to direct you once you enter
+            Duke Energy Hall.
+          </p>
+
+        </div>
+      </section>
+
+      {/* PARKING */}
+      <section className="company-logistics-section">
         <div className="company-logistics-container">
 
           <div className="company-logistics-heading">
@@ -118,7 +162,7 @@ function CompanyLogistics() {
       </section>
 
       {/* HUNT DIRECTIONS */}
-      <section className="company-logistics-section">
+      <section className="company-logistics-section company-logistics-alt">
         <div className="company-logistics-container">
 
           <div className="company-logistics-heading">
@@ -139,6 +183,56 @@ function CompanyLogistics() {
                 src={huntFloorMap}
                 alt="Level 2 floor map of James B. Hunt Jr. Library showing Duke Energy Hall"
               />
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* BOOTH ASSIGNMENTS */}
+      <section className="company-logistics-section">
+        <div className="company-logistics-container">
+
+          <div className="company-logistics-heading">
+            <p>Event Information</p>
+            <h2>Booth Assignments</h2>
+          </div>
+
+          <div className="booth-assignment-section">
+
+            <h3>Employers</h3>
+
+            <div className="booth-assignment-list">
+              {boothAssignments.employers.map((item) => (
+                <div className="booth-assignment-row" key={item.booth}>
+                  <span className="booth-assignment-number">
+                    Booth {item.booth}
+                  </span>
+
+                  <span className="booth-assignment-name">
+                    {item.name}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <h3 className="booth-assignment-subheading">
+              Student Organizations
+            </h3>
+
+            <div className="booth-assignment-list">
+              {boothAssignments.studentOrganizations.map((item) => (
+                <div className="booth-assignment-row" key={item.booth}>
+                  <span className="booth-assignment-number">
+                    Booth {item.booth}
+                  </span>
+
+                  <span className="booth-assignment-name">
+                    {item.name}
+                  </span>
+                </div>
+              ))}
             </div>
 
           </div>

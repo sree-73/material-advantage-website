@@ -23,6 +23,10 @@ function CareerFair() {
 
           <h1>{careerFairInfo.title}</h1>
 
+          <p className="career-fair-partner">
+            {careerFairInfo.partner}
+          </p>
+
           <p className="career-fair-subtitle">
             {careerFairInfo.subtitle}
           </p>
@@ -37,9 +41,11 @@ function CareerFair() {
 
           <a
             href={careerFairInfo.registrationLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="career-fair-primary-button"
           >
-            Registration Coming Soon
+            Register
           </a>
         </div>
       </section>
@@ -104,44 +110,48 @@ function CareerFair() {
             <h2>Participating Companies</h2>
           </div>
 
-          {participatingCompanies.length > 0 ? (
-            <div className="career-fair-company-grid">
+          <p className="company-note">
+            Additional companies may be announced prior to the event.
+          </p>
 
-              {participatingCompanies.map((company) => (
-                <article
-                  className="career-fair-company-card"
-                  key={company.name}
-                >
-                  <h3>{company.name}</h3>
+          <div className="career-fair-company-grid">
 
-                  <p>{company.description}</p>
+            {participatingCompanies.map((company) => (
 
-                  {company.website && (
-                    <a
-                      href={company.website}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Visit Website →
-                    </a>
-                  )}
-                </article>
-              ))}
+              <a
+                key={company.id}
+                href={company.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="career-fair-company-card"
+              >
 
-            </div>
-          ) : (
-            <div className="career-fair-coming-soon">
-              <h3>Companies Coming Soon</h3>
-              <p>
-                Our participating employers will be announced
-                as they are confirmed. Check back for updates.
-              </p>
-            </div>
-          )}
+                <div className="company-logo-wrapper">
+                  <img
+                    src={company.logo}
+                    alt={`${company.name} logo`}
+                    className="company-logo"
+                  />
+                </div>
+
+                <div className="company-divider"></div>
+
+                <h3>{company.name}</h3>
+
+                <p>{company.description}</p>
+
+                <span className="company-link">
+                  Visit Website →
+                </span>
+
+              </a>
+
+            ))}
+
+          </div>
 
         </div>
       </section>
-
       {/* PREPARATION */}
       <section className="career-fair-section">
         <div className="career-fair-container">

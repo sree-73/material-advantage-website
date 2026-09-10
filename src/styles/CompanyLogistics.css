@@ -163,6 +163,101 @@
   font-weight: 600;
 }
 
+/* =========================================================
+   EVENT SCHEDULE
+   ========================================================= */
+
+.event-schedule {
+  width: 100%;
+
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  background: white;
+}
+
+.event-schedule-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(140px, 0.8fr)
+    minmax(220px, 1.2fr)
+    minmax(260px, 1.4fr);
+
+  align-items: stretch;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.event-schedule-row:last-child {
+  border-bottom: none;
+}
+
+.event-schedule-time,
+.event-schedule-activity,
+.event-schedule-details {
+  padding: 1.4rem 1.5rem;
+}
+
+.event-schedule-time {
+  display: flex;
+  align-items: center;
+
+  color: #cc0000;
+
+  font-size: 1.05rem;
+  font-weight: 800;
+
+  border-right: 1px solid #dddddd;
+}
+
+.event-schedule-activity {
+  display: flex;
+  align-items: center;
+
+  border-right: 1px solid #dddddd;
+}
+
+.event-schedule-activity h3 {
+  margin: 0;
+
+  font-size: 1.05rem;
+}
+
+.event-schedule-details {
+  display: flex;
+  align-items: center;
+}
+
+.event-schedule-details p {
+  margin: 0;
+
+  color: #555555;
+
+  line-height: 1.6;
+}
+
+.event-schedule-note {
+  margin: 1.5rem 0 0;
+
+  padding: 1.25rem 1.4rem;
+
+  background: #ffffff;
+
+  border-left: 5px solid #cc0000;
+  border-radius: 0 8px 8px 0;
+
+  color: #555555;
+
+  line-height: 1.65;
+}
+
+.event-schedule-note strong {
+  color: #222222;
+}
+
 
 /* =========================================================
    PARKING
@@ -310,6 +405,48 @@
 
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
 }
+
+.booth-assignment-section {
+  max-width: 900px;
+}
+
+.booth-assignment-section h3 {
+  margin: 0 0 1rem;
+
+  font-size: 1.35rem;
+}
+
+.booth-assignment-subheading {
+  margin-top: 3rem !important;
+}
+
+.booth-assignment-list {
+  border-top: 1px solid #dddddd;
+}
+
+.booth-assignment-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+
+  gap: 1.5rem;
+
+  padding: 1.1rem 0;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.booth-assignment-number {
+  color: #cc0000;
+
+  font-weight: 800;
+}
+
+.booth-assignment-name {
+  color: #333333;
+
+  font-weight: 600;
+}
+
 
 
 /* =========================================================
@@ -660,5 +797,33 @@
   .parking-map-wrapper img,
   .floor-map-wrapper img {
     max-height: none;
+  }
+
+  .event-schedule-row {
+  grid-template-columns: 1fr;
+  }
+
+  .event-schedule-time,
+  .event-schedule-activity,
+  .event-schedule-details {
+    border-right: none;
+  }
+
+  .event-schedule-time {
+    padding-bottom: 0.4rem;
+  }
+
+  .event-schedule-activity {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .event-schedule-details {
+    padding-top: 0.4rem;
+  }
+
+  .booth-assignment-row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
   }
 }
