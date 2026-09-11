@@ -151,15 +151,15 @@ export const hotels = [
 
 export const contacts = [
   {
-    role: "Pre-Event Contact",
+    role: "Pre-Event & Day-of Contact",
     name: "Krys Woodruff",
     phone: "929-308-8484",
-    email: "TBD",
+    email: "kawoodr2@ncsu.edu",
   },
   {
-    role: "Day-of Contact",
-    name: "Material Advantage Team",
-    email: "TBD",
+    role: "General Chapter Email",
+    name: "Material Advantage",
+    email: "materialadvantage@ncsu.edu",
   },
 ];
 
@@ -184,4 +184,9 @@ export const companyFaqs = [
     answer:
       "Duke Energy Hall is located on the second floor of James B. Hunt Jr. Library. Enter from Partners Way, take the elevator to Level 2, and continue straight across the lobby.",
   },
+  {
+  question: "Can we ship booth materials in advance?",
+  answer:
+    "Yes. If you plan to ship booth materials before the event, please send them to:\n\nMaterial Advantage Student Chapter\n911 Partners Way\nEngineering Building I\nRaleigh, NC 27695-7907\n\nPlease also let us know the estimated delivery date and time so our officers can watch for your package."
+  }
 ];

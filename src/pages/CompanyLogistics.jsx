@@ -354,6 +354,11 @@ function CompanyLogistics() {
 
                 <strong>{contact.name}</strong>
 
+                {contact.phone && (
+                  <a href={`tel:${contact.phone.replace(/-/g, "")}`}>
+                    {contact.phone}
+                  </a>
+                )}
                 <a href={`mailto:${contact.email}`}>
                   {contact.email}
                 </a>
