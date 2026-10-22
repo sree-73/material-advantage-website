@@ -1,61 +1,78 @@
 .footer {
-    background-color: #1f1f1f;
-    color: white;
-    padding: 60px 60px 25px;
+  background-color: #202020;
+  color: #fff;
+  padding: 45px 0 20px;
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 35px;
 
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
 
+/* Material Advantage branding */
 .footer-brand h3 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 8px;
 }
 
-.footer-brand p,
-.footer-contact p {
-    color: #aaa;
+.footer-brand p {
+  color: #aaa;
+  margin: 0;
 }
 
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer a {
-    color: #ddd;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: white;
-}
-
+/* Horizontal social and membership links */
 .footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
-.footer-contact h4 {
-    margin-bottom: 5px;
+.footer-contact a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
 }
 
+.footer-contact a:hover {
+  color: #cc0000;
+}
+
+/* Copyright section */
 .footer-bottom {
-    max-width: 1200px;
-    margin: 45px auto 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px 0;
+  border-top: 1px solid #444;
+}
 
-    padding-top: 20px;
+.footer-bottom p {
+  color: #999;
+  font-size: 0.85rem;
+  margin: 0;
+}
 
-    border-top: 1px solid #444;
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
 
-    color: #888;
-    font-size: 0.85rem;
+  .footer-contact {
+    gap: 16px 22px;
+  }
+
+  .footer-brand h3 {
+    font-size: 1.4rem;
+  }
 }

@@ -6,6 +6,14 @@ import conference25 from "../images/officers/conference25.png";
 import finance25 from "../images/officers/finance25.png";
 import admin25 from "../images/officers/admin25.png";
 
+import chair26 from "../images/officers/chair26.jpg";
+import vc26 from "../images/officers/vc26.jpg";
+import professional26 from "../images/officers/professional26.jpg";
+import social26 from "../images/officers/social26.jpg";
+import conference26 from "../images/officers/conference26.jpg";
+import finance26 from "../images/officers/finance26.jpg";
+import admin26 from "../images/officers/admin26.jpg";
+import advert26 from "../images/officers/advert26.jpg";
 
 const officerGroups = [
     {
@@ -16,56 +24,56 @@ const officerGroups = [
                 name: "Ariel Nguyen",
                 role: "Chair",
                 bio: "",
-                image: null
+                image: chair26
             },
             {
                 id: 2,
                 name: "Lana Bess",
                 role: "Vice Chair",
                 bio: "",
-                image: null
+                image: vc26
             },
             {
                 id: 3,
                 name: "Krys Woodruff",
                 role: "Professional Events Chair",
                 bio: "",
-                image: null
+                image: professional26
             },
             {
                 id: 4,
                 name: "Julia Kalinina",
                 role: "Social Events Chair",
                 bio: "",
-                image: null
+                image: social26
             },
             {
                 id: 5,
                 name: "Sree Damuluri",
                 role: "Conference Chair",
                 bio: "",
-                image: null
+                image: conference26
             },
             {
                 id: 6,
                 name: "Caitlin Lowe",
                 role: "Advertising Chair",
                 bio: "",
-                image: null
+                image: advert26
             },
             {
                 id: 7,
                 name: "Avery Smith",
                 role: "Finance Chair",
                 bio: "",
-                image: null
+                image: finance26
             },
             {
                 id: 8,
                 name: "Sufi Torabi",
                 role: "Administrative Chair",
                 bio: "",
-                image: null
+                image: admin26
             }
         ]
     },
@@ -113,7 +121,7 @@ const officerGroups = [
                 name: "Lana Bess",
                 role: "Advertising Chair",
                 bio: "",
-                image: null
+                image: vc26
             },
             {
                 id: 7,
