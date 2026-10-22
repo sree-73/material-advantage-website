@@ -6,14 +6,14 @@ import conference25 from "../images/officers/conference25.png";
 import finance25 from "../images/officers/finance25.png";
 import admin25 from "../images/officers/admin25.png";
 
-import chair26 from "../images/officers/chair26.jpg";
-import vc26 from "../images/officers/vc26.jpg";
-import professional26 from "../images/officers/professional26.jpg";
-import social26 from "../images/officers/social26.jpg";
+import chair26 from "../images/officers/chair26.JPG";
+import vc26 from "../images/officers/vc26.JPG";
+import professional26 from "../images/officers/professional26.JPG";
+import social26 from "../images/officers/social26.JPG";
 import conference26 from "../images/officers/conference26.jpg";
-import finance26 from "../images/officers/finance26.jpg";
-import admin26 from "../images/officers/admin26.jpg";
-import advert26 from "../images/officers/advert26.jpg";
+import finance26 from "../images/officers/finance26.JPG";
+import admin26 from "../images/officers/admin26.JPG";
+import advert26 from "../images/officers/advert26.JPG";
 
 const officerGroups = [
     {
